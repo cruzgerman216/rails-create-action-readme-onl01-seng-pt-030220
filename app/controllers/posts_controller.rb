@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    post.create(params)
   end
 
   # add create method here
